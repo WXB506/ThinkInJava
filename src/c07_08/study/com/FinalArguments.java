@@ -1,0 +1,27 @@
+package c07_08.study.com;
+
+class Gizmo {
+	public void spin() {
+		System.out.println("Gzimo");
+	}
+}
+
+public class FinalArguments {
+	void with(final Gizmo g) {
+	}
+	
+	void without(Gizmo g) {
+		g = new Gizmo();
+		g.spin();
+	}
+	
+	int g(final int i) {
+		return i+1;
+	}
+	
+	public static void main(String[] args) {
+		FinalArguments bf = new FinalArguments();
+		bf.without(null);
+		bf.with(null);
+	}
+}
