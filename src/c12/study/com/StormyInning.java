@@ -53,6 +53,7 @@ public class StormyInning extends Inning implements Storm {
 		} catch(Foul e) {
 			System.out.println("Foul");
 		} catch(RainedOut e) {
+			
 			System.out.println("Rained out");
 		} catch(BaseballException e) {
 			System.out.println("Generic baseball exception");
