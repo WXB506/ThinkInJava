@@ -3,7 +3,10 @@ package c12.study.com;
 public class Cleanup {
 	public static void main(String[] args) {
 		try {
-			InputFile in = new InputFile("E:/Java/workspace/ThinkInJava/src/c12/study/com/Cleanup.java");
+			// relative path
+			InputFile in = new InputFile("./src/c12/study/com/Cleanup.java");
+			// abosolute path
+			//InputFile in = new InputFile("E:/Java/workspace/ThinkInJava/src/c12/study/com/Cleanup.java");
 			try {
 				String s;
 				while((s = in.getLine()) != null)
